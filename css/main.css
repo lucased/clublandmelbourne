@@ -79,22 +79,22 @@ textarea {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+   @media only screen and (min-width: 35em) {
 
-}
+   }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+   @media print,
+   (-o-min-device-pixel-ratio: 5/4),
+   (-webkit-min-device-pixel-ratio: 1.25),
+   (min-resolution: 120dpi) {
 
-}
+   }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
-.ir {
+   .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
@@ -156,7 +156,7 @@ textarea {
    Print styles
    ========================================================================== */
 
-@media print {
+   @media print {
     * {
         background: transparent !important;
         color: #000 !important;
@@ -224,17 +224,13 @@ textarea {
 
 body {
     background-color: black;
+    background-image: url("../img/Clubland-Logo.jpg");
+    background-repeat:no-repeat;
+    background-position:center; 
+    background-size: 100% 100%;
 }
 
-video#bgvid {
-position: fixed; right: 0; bottom: 0;
-min-width: 100%; min-height: 100%;
-width: auto; height: auto; z-index: -100;
-background: url(../img/Clubland-Logo.jpg) no-repeat;
-background-size: cover;
-}
 
-video { display: block; }
 
 h1, h2, h3, h4 {
     /*font-family:'Source Sans Pro', sans-serif; font-weight:600; */
