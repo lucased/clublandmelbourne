@@ -22,7 +22,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
 
-            <video id="bgvid"></video>
+            <!-- <video id="bgvid"></video> -->
 
 
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -37,12 +37,16 @@
             <script>
 
             $(function() {
-                var BV = new $.BigVideo();
+                var BV = new $.BigVideo({useFlashForFirefox:false});
                 BV.init();
                 if (Modernizr.touch) {
                     BV.show('img/Clubland-Logo.jpg');
                 } else {
-                    BV.show('video/Clubland_Logo.mp4',{ambient:true});
+                    BV.show([
+                        { type: "video/mp4",  src: "video/Clubland_Logo.mp4" },
+                        { type: "video/webm", src: "video/Clubland_Logo.webm"},
+                        { type: "video/ogv",  src: "video/Clubland_Logo.ogv" }]
+                        ,{ambient:true});
                 }
             });
 
