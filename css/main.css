@@ -257,7 +257,7 @@ p {
     position:relative;
     margin: 0 auto;
     width:400px;
-    top: 55%;
+    top: 50%;
     -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
 }
 
