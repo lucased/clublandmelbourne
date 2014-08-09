@@ -274,7 +274,7 @@ textarea {
         .logo {
             margin: 0 auto;
             position: relative;
-            width: 320px;
+            width: 100%;
             height: 280px;
             background-image: url("../img/Clubland-Logo_Alpha.png");
         }
