@@ -24,7 +24,9 @@
             <![endif]-->
 
             <div class="main">
-                <p>Every weekend thousands of twenty somethings head to the city in search of excitement, glamour ... and a chance to get laid</p>
+                <p>
+                  Every weekend thousands of twenty somethings head to the city in search of excitement, glamour ... and a chance to get laid
+                </p>
             </div>
 
             <div class="main2">
@@ -35,33 +37,43 @@
                     <h4>enquires: <a href="mailto:rob@clublandmelbourne.com">rob@clublandmelbourne.com</a></h4>
                 </div>
             </div>
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+      <script src="js/jquery-ui.min.js"></script>
+      <script src="js/imagesloaded.min.js"></script>
+      <script src="js/video.js"></script>
+      <script src="js/bigvideo.js"></script>
 
+      <script src="js/main.js"></script>
 
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-            <script src="js/jquery-ui.min.js"></script>
-            <script src="js/imagesloaded.min.js"></script>
-            <script src="js/video.js"></script>
-            <script src="js/bigvideo.js"></script>
+      <script>
 
-            <script src="js/main.js"></script>
+      $(function() {
+        var BV = new $.BigVideo({useFlashForFirefox:false});
+        BV.init();
+        if (Modernizr.touch) {
+            BV.show('img/Clubland-Logo.jpg');
+        } else {
+            BV.show([
+                { type: "video/mp4",  src: "video/Clubland_Logo.mp4" },
+                { type: "video/webm", src: "video/Clubland_Logo.webm"},
+                { type: "video/ogv",  src: "video/Clubland_Logo.ogv" }]
+                ,{ambient:true});
+        }
+    });
 
-            <script>
+      </script>
 
-            $(function() {
-                var BV = new $.BigVideo({useFlashForFirefox:false});
-                BV.init();
-                if (Modernizr.touch) {
-                    BV.show('img/Clubland-Logo.jpg');
-                } else {
-                    BV.show([
-                        { type: "video/mp4",  src: "video/Clubland_Logo.mp4" },
-                        { type: "video/webm", src: "video/Clubland_Logo.webm"},
-                        { type: "video/ogv",  src: "video/Clubland_Logo.ogv" }]
-                        ,{ambient:true});
-                }
-            });
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            </script>
-        </body>
-        </html>
+      ga('create', 'UA-53589447-1', 'auto');
+      ga('send', 'pageview');
+
+      </script>
+  </body>
+  </html>
