@@ -228,58 +228,60 @@ body {
     background-repeat:no-repeat;
     background-position:center; 
     background-size: 100% 100%;*/
-    }
+}
 
 
 
-    h1, h2, h3, h4, p {
-        /*font-family:'Source Sans Pro', sans-serif; font-weight:600; */
-        font-family: 'Abel', sans-serif;
-        text-transform:uppercase;
-    }
-    h1 {font-size:48px; }
-    h1, h2, h3, h4, p, a { margin:0 0 10px; color:#e9e9e9; text-shadow: 1px 1px 1px #000; text-align: center;}
+h1, h2, h3, h4, p {
+    /*font-family:'Source Sans Pro', sans-serif; font-weight:600; */
+    font-family: 'Abel', sans-serif;
+    text-transform:uppercase;
+}
+h1 {font-size:48px; }
+h1, h2, h3, h4, p, a { margin:0 0 10px; color:#e9e9e9; text-shadow: 1px 1px 1px #000; text-align: center;}
 
-    p {
-        text-transform: none;
-        font-size: 24px;
-    }
+p {
+    text-transform: none;
+    font-size: 24px;
+}
 
-    .main {
-        position:relative;
+.main {
+    position:relative;
+    margin: 0 auto;
+    width:65%;
+    top: 20%;
+    -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
+}
+
+.main2 {
+    position:relative;
+    margin: 0 auto;
+    width:40%;
+    top: 50%;
+    -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
+}
+
+.box { 
+    /*background:#444; background:rgba(0,0,0,0);*/
+    padding:20px;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .logo {
         margin: 0 auto;
-        width:65%;
-        top: 20%;
-        -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
+        position: relative;
+        width: 100%;
+        height: 270px;
+        background-image: url("../img/Clubland-Logo_Alpha.png");
+        background-repeat:no-repeat;
+        background-position:center; 
     }
 
-    .main2 {
-        position:relative;
-        margin: 0 auto;
-        width:40%;
-        top: 50%;
-        -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
-    }
-
-    .box { 
-        /*background:#444; background:rgba(0,0,0,0);*/
-        padding:20px;
-        border-radius:5px;
-        margin-bottom:20px;
-    }
-
-
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-        .logo {
-            margin: 0 auto;
-            position: relative;
-            width: 100%;
-            height: 280px;
-            background-image: url("../img/Clubland-Logo_Alpha.png");
-        }
-
-    }
+}
 
 
 
