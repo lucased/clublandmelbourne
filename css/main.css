@@ -274,7 +274,7 @@ p {
     .logo {
         margin: 0 auto;
         position: relative;
-        width: 100%;
+        width: 90%;
         height: 270px;
         background-image: url("../img/Clubland-Logo_Alpha.png");
         background-repeat:no-repeat;
