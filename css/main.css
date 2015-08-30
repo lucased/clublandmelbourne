@@ -242,24 +242,28 @@ h1 {font-size:48px; }
 h1, h2, h3, h4, p, a { margin:0 0 10px; color:#e9e9e9; text-shadow: 1px 1px 1px #000; text-align: center;}
 
 p {
+
     text-transform: none;
+    font-size: 40px;
+}
+
+#content p {
     font-size: 24px;
 }
+
 
 .main {
     position:relative;
     margin: 0 auto;
     width:65%;
-    top: 100px;
-    /*top: 20%;*/
+    top: 60px;
+
 }
 
 .main2 {
     position:relative;
     margin: 0 auto;
-    width:25%;
-    top: 130px;
-    /*top: 50%;*/
+    width:70%;
     -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
 }
 
@@ -271,10 +275,16 @@ p {
     width: 300px;
 }
 
+img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
 html{
 
     background-size:cover;
-    background-image:url('../img/Clubland-Logo_Background-b&w.jpg');
+    background-image:url('../img/CLUBBER-with-lights-.jpg');
 }
 
 
